@@ -3,7 +3,7 @@ using System.ComponentModel;
 namespace WmsCommon.Enums
 {
 	// ensure it matches the database table and plc enum
-	public enum PlcModuleType : short
+	public enum PlcModuleType : sbyte // short
 	{
 		[Description("Undefined")]
 		Undefined = 0,

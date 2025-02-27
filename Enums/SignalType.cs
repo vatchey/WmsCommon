@@ -3,7 +3,7 @@ using System.ComponentModel;
 namespace WmsCommon.Enums
 {
 	// ensure it matches the database table and plc enum
-	public enum SignalType : short
+	public enum SignalType : sbyte // short
 	{
 		[Description("Undefined")]
 		Undefined = 0,

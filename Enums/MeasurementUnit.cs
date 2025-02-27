@@ -3,7 +3,7 @@ using System.ComponentModel;
 namespace WmsCommon.Enums
 {
 	// ensure it matches the database table and plc enum
-	public enum MeasurementUnit : short
+	public enum MeasurementUnit : sbyte //short
 	{
 		[Description("Undefined")]
 		Undefined = 0,

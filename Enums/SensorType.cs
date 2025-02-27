@@ -3,28 +3,28 @@ using System.ComponentModel;
 namespace WmsCommon.Enums
 {
 	// ensure it matches the database table and plc enum
-   public enum SensorType : short
+   public enum SensorType : sbyte // short
    {
       [Description("Undefined")]
       Undefined = 0,
       
       [Description("Distance")]
-      LVDT = 1,
+      LVDT,
       
       [Description("Welder Voltage")]
-      Voltage = 2,
+      WelderVolt,
       
       [Description("Welder Current")]
-      Current = 3,
+      WelderCurrent,
       
       [Description("Upset cap side pressure")]
       UpsetCapPres = 4,
       
       [Description("Upset rod side pressure")]
-      UpsetRodPres = 5,
+      UpsetRodPres,
       
       [Description("System pressure")]
-      SysPres = 6
+      SysPres
    }
 }
    
